@@ -82,7 +82,7 @@
         "z": "sd_o4DvsS7SsYjYrtv6",
         "viewType": "client-pages",
         "nodeType": "flow",
-        "name": "",
+        "name": "callhttprequest",
         "method": "get",
         "methodMappingObj": {},
         "urlMapping": "bh.local.url",
@@ -111,10 +111,165 @@
         "params": {},
         "paramsObj": [],
         "paramMappingObj": {},
-        "functionName": "sd_8lMw97wzMvQxunIy",
+        "functionName": "callhttprequest",
         "category": "HTTP",
         "x": 420,
         "y": 120,
+        "wires": [
+            [
+                "sd_dhF1IhHuAKuPFWlA"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "weatherapi",
+        "generated": true
+    },
+    {
+        "id": "sd_dhF1IhHuAKuPFWlA",
+        "type": "Script",
+        "z": "sd_o4DvsS7SsYjYrtv6",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(bh.local.resultdata)\nconsole.log(bh.local)\nconsole.log(bh.input)",
+        "functionName": "sd_dhF1IhHuAKuPFWlA",
+        "category": "Function",
+        "x": 520,
+        "y": 120,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "weatherapi",
+        "generated": true
+    },
+    {
+        "id": "sd_lLaIWdce3aMEdxgq",
+        "type": "Start",
+        "z": "sd_o4DvsS7SsYjYrtv6",
+        "viewType": "client-server",
+        "nodeType": "start",
+        "name": "forecastapi",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "place",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "resultfdata",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "forecastapi",
+        "category": "General",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "sd_i0Rd4OtlZxW8tt0d"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "weatherapi"
+    },
+    {
+        "id": "sd_i0Rd4OtlZxW8tt0d",
+        "type": "Script",
+        "z": "sd_o4DvsS7SsYjYrtv6",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.url = bh.system.environment.properties.WEATHER_API_URL+'/forecast?q='+bh.input.place+'&appid='+bh.system.environment.properties.WEATHER_API_KEY+'&units=metric'\nconsole.log(bh.local.url)",
+        "functionName": "sd_i0Rd4OtlZxW8tt0d",
+        "category": "Function",
+        "x": 280,
+        "y": 300,
+        "wires": [
+            [
+                "sd_5muX0vwvKwT8Wcxl"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "weatherapi",
+        "generated": true
+    },
+    {
+        "id": "sd_5muX0vwvKwT8Wcxl",
+        "type": "HttpRequest",
+        "z": "sd_o4DvsS7SsYjYrtv6",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.local.url",
+        "urlMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "url"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.resultfdata",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "resultfdata"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_5muX0vwvKwT8Wcxl",
+        "category": "HTTP",
+        "x": 440,
+        "y": 320,
+        "wires": [
+            [
+                "sd_WKvRBwF0TfVheXN1"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "weatherapi",
+        "generated": true
+    },
+    {
+        "id": "sd_WKvRBwF0TfVheXN1",
+        "type": "Script",
+        "z": "sd_o4DvsS7SsYjYrtv6",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(bh.local.resultfdata)\nconsole.log(bh.local)\nconsole.log(bh.input)",
+        "functionName": "sd_WKvRBwF0TfVheXN1",
+        "category": "Function",
+        "x": 560,
+        "y": 320,
         "wires": [
             []
         ],
