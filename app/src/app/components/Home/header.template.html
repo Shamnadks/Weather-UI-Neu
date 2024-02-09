@@ -1,1 +1,12 @@
-<div id="angularRoot"></div>
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div>
+  </div>
+  <form [formGroup]="page.form">
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+        <input matInput placeholder="Input" [required]="false" formControlName="place">
+
+      </mat-form-field><button mat-button (click)="placeSearch(page.form.value.place)">Button</button>
+    </div>
+  </form>
+</div>

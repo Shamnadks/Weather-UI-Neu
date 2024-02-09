@@ -1325,14 +1325,15 @@
                         }
                     }
                 },
-                "0fce4ac2-40de-82d8-6c07-85ca368646d5": {
-                    "paletteKey": "NG-icon",
+                "475c4f95-4d46-51ab-0a0e-01b694b4182e": {
+                    "paletteKey": "Html5",
                     "parentEditorKey": "91eba7a4-3299-6457-9a7b-cc6dfcbc26cd",
+                    "isAdvancedComponent": true,
                     "commentid": null,
                     "designerReference": [
                         {
                             "_key": "style",
-                            "_value": "",
+                            "_value": "height:20px",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -1343,25 +1344,200 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "IconName",
-                            "_value": "cloud",
-                            "_type": "a",
+                            "_key": "htmlElement",
+                            "_value": "iframe",
+                            "_type": "dav",
                             "_attrDef": "p",
                             "_useAsLabel": true
                         },
                         {
-                            "_key": "[inline]",
-                            "_value": "",
-                            "_type": "kv",
-                            "_attrDef": "p"
+                            "_key": "tagType",
+                            "_value": "iframe",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
                         },
                         {
-                            "_key": "color",
+                            "_key": "name",
                             "_value": "",
                             "_type": "kv",
-                            "_attrDef": "p"
+                            "_attrDef": "p",
+                            "_visibility": true
+                        },
+                        {
+                            "_key": "sandbox",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": true
+                        },
+                        {
+                            "_key": "src",
+                            "_value": "https://cdn.jim-nielsen.com/ios/512/weather-2021-12-07.png",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": true
+                        },
+                        {
+                            "_key": "srcdoc",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": true
+                        },
+                        {
+                            "_key": "width",
+                            "_value": "20px",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": true
+                        },
+                        {
+                            "_key": "[autoplay]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "[loop]",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "data",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "audioSource",
+                            "_value": [],
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "videoSource",
+                            "_value": [],
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "audioDatasource",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "audioSrc",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "audioType",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "videoDatasource",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "videoSrc",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "videoType",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "(audioplay)",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "(videoplay)",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "(audiopause)",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "(videopause)",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "(audioended)",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": false
+                        },
+                        {
+                            "_key": "(videoended)",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p",
+                            "_visibility": false
                         }
-                    ]
+                    ],
+                    "a0b5fd2f-2e8b-2560-89dd-ec7b1c852aab": {
+                        "paletteKey": "html-editor",
+                        "parentEditorKey": "475c4f95-4d46-51ab-0a0e-01b694b4182e",
+                        "isAdvancedChildComponent": true,
+                        "commentid": null,
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "html",
+                                "_value": "",
+                                "_type": "a",
+                                "_attrDef": "p"
+                            }
+                        ]
+                    }
                 },
                 "7d1ec338-a8c6-1100-53b0-b35dad0b2851": {
                     "paletteKey": "html-editor",
@@ -1393,7 +1569,6 @@
                     "paletteKey": "Html5",
                     "parentEditorKey": "91eba7a4-3299-6457-9a7b-cc6dfcbc26cd",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "commentid": null,
                     "designerReference": [
                         {
@@ -1581,7 +1756,6 @@
                         "paletteKey": "html-editor",
                         "parentEditorKey": "c816eef7-3803-18a4-db39-e8e370b97e06",
                         "isAdvancedChildComponent": true,
-                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
