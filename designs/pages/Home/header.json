@@ -40,8 +40,7 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "headerComponent",
-        "generated": false
+        "serviceName": "headerComponent"
     },
     {
         "id": "sd_BVolLXfJUBimYk33",
@@ -175,8 +174,7 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "headerComponent",
-        "generated": false
+        "serviceName": "headerComponent"
     },
     {
         "id": "sd_mNFX8O12mBAdWRXj",
@@ -292,9 +290,9 @@
             ]
         ],
         "__n_excludedFromValidation__": {},
-        "generated": true,
         "generateNext": false,
-        "serviceName": "headerComponent"
+        "serviceName": "headerComponent",
+        "generated": true
     },
     {
         "id": "sd_fSPFK77nGVplu7Qk",
