@@ -628,7 +628,7 @@
                             },
                             {
                                 "_key": "placeholder",
-                                "_value": "Input",
+                                "_value": "CIty",
                                 "_type": "kv",
                                 "_attrDef": "p",
                                 "_useAsLabel": true
@@ -786,6 +786,7 @@
                     "6a491cbf-cdb4-9644-c0a0-9d0ab2c781ca": {
                         "paletteKey": "NG-button",
                         "parentEditorKey": "ec99fefd-2fb5-e03d-3cbe-94d958cf9d4e",
+                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
@@ -848,6 +849,46 @@
                             },
                             {
                                 "_key": "routerLink",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            }
+                        ]
+                    },
+                    "26247de0-f3ac-0f13-811c-b9ca0f8127dc": {
+                        "paletteKey": "NG-icon",
+                        "parentEditorKey": "ec99fefd-2fb5-e03d-3cbe-94d958cf9d4e",
+                        "isCommented": "true",
+                        "commentid": "1707508848490",
+                        "designerReference": [
+                            {
+                                "_key": "style",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "class",
+                                "_value": "",
+                                "_type": "dav",
+                                "_attrDef": "p"
+                            },
+                            {
+                                "_key": "IconName",
+                                "_value": "search",
+                                "_type": "a",
+                                "_attrDef": "p",
+                                "_useAsLabel": true
+                            },
+                            {
+                                "_key": "[inline]",
+                                "_value": "",
+                                "_type": "kv",
+                                "_attrDef": "p",
+                                "_customAttributeFlag": "flowpicker"
+                            },
+                            {
+                                "_key": "color",
                                 "_value": "",
                                 "_type": "kv",
                                 "_attrDef": "p"
