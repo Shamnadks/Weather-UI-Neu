@@ -81,7 +81,8 @@ weatherapi,
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: 'home', component: homeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

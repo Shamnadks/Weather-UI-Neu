@@ -40,11 +40,242 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "placedata",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "forecastdata",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            }
+        ],
         "functionName": "sd_7iK0p97mCa6ByPFl",
         "category": "Function",
         "x": 180,
         "y": 30,
+        "wires": [
+            [
+                "sd_BPVJYFOwxRy1w5SC"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_NMGSogRW1prjIAdG",
+        "type": "PageStart",
+        "z": "sd_bkPp66mmrxGclQvD",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "getplaceinfo",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "getplaceinfo",
+        "category": "General",
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "sd_BPVJYFOwxRy1w5SC"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_BPVJYFOwxRy1w5SC",
+        "type": "Script",
+        "z": "sd_bkPp66mmrxGclQvD",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "// if(page.form?.value?.newPlace?.trim()?.length>0){\n// bh.local.place = page.form?.value?.newPlace;\n// page.form.value.newPlace=\"\";\n// }\n// else{\n// throw new Error(\"Enter some text\");\n// }\nbh.local.place=\"kasaragod\"",
+        "functionName": "sd_BPVJYFOwxRy1w5SC",
+        "category": "Function",
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "sd_KdtvAznpWl5SGZH7"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_KdtvAznpWl5SGZH7",
+        "type": "PageCallService",
+        "z": "sd_bkPp66mmrxGclQvD",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_o4DvsS7SsYjYrtv6",
+            "type": "tab",
+            "createdDate": "2024-02-09T05:34:42.188Z",
+            "label": "weatherapi",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_jq3BYVrlC0e9zBEe",
+            "flowName": "weatherapi"
+        },
+        "inputVariables": [
+            {
+                "key": "place",
+                "map": true,
+                "valueType": "bh.input",
+                "value": "place"
+            }
+        ],
+        "outputMapping": [
+            {
+                "mapVarType": "local",
+                "key": "resultdata",
+                "valueType": "this.page",
+                "value": "resultdata",
+                "mapVarName": "resultdata",
+                "localVar": "this.page.resultdata"
+            }
+        ],
+        "serviceImportPath": "app/sd-services/weatherapi",
+        "startName": "weatherapi",
+        "inputParams": [
+            "bh.input.place"
+        ],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_KdtvAznpWl5SGZH7",
+        "category": "General",
+        "x": 440,
+        "y": 220,
+        "wires": [
+            [
+                "sd_mrvouXCNQ7ywFMFe"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_mrvouXCNQ7ywFMFe",
+        "type": "Script",
+        "z": "sd_bkPp66mmrxGclQvD",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(page.placedata);",
+        "functionName": "sd_mrvouXCNQ7ywFMFe",
+        "category": "Function",
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "sd_JvQgU9WgqBxaB4U6"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_JvQgU9WgqBxaB4U6",
+        "type": "PageCallService",
+        "z": "sd_bkPp66mmrxGclQvD",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_o4DvsS7SsYjYrtv6",
+            "type": "tab",
+            "createdDate": "2024-02-09T05:34:42.188Z",
+            "label": "weatherapi",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_lLaIWdce3aMEdxgq",
+            "flowName": "forecastapi"
+        },
+        "inputVariables": [
+            {
+                "key": "place",
+                "map": true,
+                "valueType": "bh.input",
+                "value": "place"
+            }
+        ],
+        "outputMapping": [
+            {
+                "mapVarType": "local",
+                "key": "resultfdata",
+                "valueType": "this.page",
+                "value": "forecastdata",
+                "mapVarName": "resultfdata",
+                "localVar": "this.page.forecastdata"
+            }
+        ],
+        "serviceImportPath": "app/sd-services/weatherapi",
+        "startName": "forecastapi",
+        "inputParams": [
+            "bh.input.place"
+        ],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_JvQgU9WgqBxaB4U6",
+        "category": "General",
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "sd_zQYVfMGvx5mZLX95"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_zQYVfMGvx5mZLX95",
+        "type": "Script",
+        "z": "sd_bkPp66mmrxGclQvD",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(page.forecastdata);",
+        "functionName": "sd_zQYVfMGvx5mZLX95",
+        "category": "Function",
+        "x": 760,
+        "y": 280,
         "wires": [
             []
         ],
