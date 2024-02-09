@@ -17,10 +17,22 @@
         "viewType": "common",
         "nodeType": "start",
         "name": "",
+        "inputVariables": [],
+        "localVariables": [],
+        "outputVariables": [
+            {
+                "key": "placeName",
+                "defaultValue": {
+                    "type": "any",
+                    "value": null
+                }
+            }
+        ],
+        "pageVariables": [],
         "functionName": "sd_iSdLWhvK68j09lXW",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 45,
+        "y": 60,
         "wires": [
             [
                 "sd_BVolLXfJUBimYk33"
@@ -43,10 +55,316 @@
         "globalVariables": [],
         "functionName": "sd_BVolLXfJUBimYk33",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 245,
+        "y": 60,
+        "wires": [
+            [
+                "sd_ArU3ZpcbWfiJvb4p"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "headerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ArU3ZpcbWfiJvb4p",
+        "type": "UseDependency",
+        "z": "sd_z827zzQ9CGjywGgJ",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "formData",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "FormGroup",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "formGroup"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "FormControl",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "formControl"
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/forms",
+        "serviceDesignerType": "pages",
+        "functionName": "formData",
+        "category": "Function",
+        "x": 405,
+        "y": 60,
+        "wires": [
+            [
+                "sd_NGi9K9mmsoYIPS8U"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "headerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_NGi9K9mmsoYIPS8U",
+        "type": "Script",
+        "z": "sd_z827zzQ9CGjywGgJ",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.form = new page.formGroup({\n    place : new page.formControl()\n})",
+        "functionName": "sd_NGi9K9mmsoYIPS8U",
+        "category": "Function",
+        "x": 545,
+        "y": 60,
         "wires": [
             []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "headerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_dv1bChMB2bLoplD6",
+        "type": "PageStart",
+        "z": "sd_z827zzQ9CGjywGgJ",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "placeSearch",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "placeName",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "placeSearch",
+        "category": "General",
+        "x": 45,
+        "y": 200,
+        "wires": [
+            [
+                "sd_mNFX8O12mBAdWRXj"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "headerComponent"
+    },
+    {
+        "id": "sd_mNFX8O12mBAdWRXj",
+        "type": "Script",
+        "z": "sd_z827zzQ9CGjywGgJ",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(bh.input.placeName)",
+        "functionName": "sd_mNFX8O12mBAdWRXj",
+        "category": "Function",
+        "x": 245,
+        "y": 200,
+        "wires": [
+            [
+                "sd_28woQMO5MBqZ7WdE"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "headerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_TGxs09gILxpS6hEh",
+        "type": "Output",
+        "z": "sd_z827zzQ9CGjywGgJ",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "eventName": "bh.pageOutput.placeName",
+        "data": "bh.local.response",
+        "functionName": "sd_TGxs09gILxpS6hEh",
+        "category": "Function",
+        "x": 705,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "__ssdTypeInputs__": {
+            "eventName": {
+                "type": "bh.pageOutput",
+                "value": "placeName",
+                "constant": false
+            },
+            "data": {
+                "type": "bh.local",
+                "value": "response",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "headerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_28woQMO5MBqZ7WdE",
+        "type": "PageCallService",
+        "z": "sd_z827zzQ9CGjywGgJ",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_o4DvsS7SsYjYrtv6",
+            "type": "tab",
+            "createdDate": "2024-02-09T05:34:42.188Z",
+            "label": "weatherapi",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_jq3BYVrlC0e9zBEe",
+            "flowName": "weatherapi"
+        },
+        "inputVariables": [
+            {
+                "key": "place",
+                "map": true,
+                "valueType": "bh.input",
+                "value": "placeName"
+            }
+        ],
+        "outputMapping": [
+            {
+                "mapVarType": "local",
+                "key": "resultdata",
+                "valueType": "bh.local",
+                "value": "weatherResponse",
+                "mapVarName": "resultdata",
+                "localVar": "bh.local.weatherResponse"
+            }
+        ],
+        "serviceImportPath": "app/sd-services/weatherapi",
+        "startName": "weatherapi",
+        "inputParams": [
+            "bh.input.placeName"
+        ],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_28woQMO5MBqZ7WdE",
+        "category": "General",
+        "x": 365,
+        "y": 200,
+        "wires": [
+            [
+                "sd_fSPFK77nGVplu7Qk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "headerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_fSPFK77nGVplu7Qk",
+        "type": "PageCallService",
+        "z": "sd_z827zzQ9CGjywGgJ",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_o4DvsS7SsYjYrtv6",
+            "type": "tab",
+            "createdDate": "2024-02-09T05:34:42.188Z",
+            "label": "weatherapi",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_lLaIWdce3aMEdxgq",
+            "flowName": "forecastapi"
+        },
+        "inputVariables": [
+            {
+                "key": "place",
+                "map": true,
+                "valueType": "bh.input",
+                "value": "placeName"
+            }
+        ],
+        "outputMapping": [
+            {
+                "mapVarType": "local",
+                "key": "resultfdata",
+                "valueType": "bh.local",
+                "value": "forCasteResponse",
+                "mapVarName": "resultfdata",
+                "localVar": "bh.local.forCasteResponse"
+            }
+        ],
+        "serviceImportPath": "app/sd-services/weatherapi",
+        "startName": "forecastapi",
+        "inputParams": [
+            "bh.input.placeName"
+        ],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_fSPFK77nGVplu7Qk",
+        "category": "General",
+        "x": 485,
+        "y": 200,
+        "wires": [
+            [
+                "sd_iqZ9ESRJbUpJyleO"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "headerComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_iqZ9ESRJbUpJyleO",
+        "type": "Script",
+        "z": "sd_z827zzQ9CGjywGgJ",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.response = {\n    weatherData: bh.local.weatherResponse,\n    forCastData: bh.local.forCasteResponse\n}\nconsole.log(bh.local.response)",
+        "functionName": "sd_iqZ9ESRJbUpJyleO",
+        "category": "Function",
+        "x": 605,
+        "y": 200,
+        "wires": [
+            [
+                "sd_TGxs09gILxpS6hEh"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,

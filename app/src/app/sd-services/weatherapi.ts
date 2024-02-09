@@ -180,8 +180,7 @@ export class weatherapi {
   async sd_WKvRBwF0TfVheXN1(bh) {
     try {
       console.log(bh.local.resultfdata);
-      console.log(bh.local);
-      console.log(bh.input);
+      console.log('bh.local');
       //appendnew_next_sd_WKvRBwF0TfVheXN1
       return bh;
     } catch (e) {
