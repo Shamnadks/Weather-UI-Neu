@@ -62,10 +62,22 @@ export class forecastdaysComponent {
   sd_ZJjKXnsC838lZHas(bh) {
     try {
       this.page.forecastdata = bh.pageInput.forecastdata;
+      bh = this.sd_4k44q82HWs9FJcDz(bh);
       //appendnew_next_sd_ZJjKXnsC838lZHas
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_ZJjKXnsC838lZHas');
+    }
+  }
+
+  sd_4k44q82HWs9FJcDz(bh) {
+    try {
+      const page = this.page;
+      console.log(page, 'forcastdata =============');
+      //appendnew_next_sd_4k44q82HWs9FJcDz
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_4k44q82HWs9FJcDz');
     }
   }
 

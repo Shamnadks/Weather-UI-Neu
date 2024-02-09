@@ -1,1 +1,18 @@
-<div id="angularRoot"></div>
+<div fxFlex.xs="100" fxFlex="350px" style="color:white;">
+  <p style=" font-style: normal; font-size: 24px;padding-inline-start:5px;">
+    {{page.locales.keys.NEXT5DAYS||&apos;Next 5 days&apos;}}
+  </p>
+  <div fxLayout="column wrap" style="padding:5px;" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="row" fxLayoutAlign="space-around center" *ngFor="let data of [1,2,3,4,5]" fxFlex.xs="100" style="background-color: rgba(0, 0, 255, 0.2);border-radius:5px;padding:5px;margin-bottom:2px">
+      <div>
+        <p>
+          Friday</p>
+        <p>
+          28</p>
+      </div><iframe src="https://cdn.jim-nielsen.com/ios/512/weather-2021-12-07.png" width="20px" style="height:20px">
+      </iframe>
+      <p>
+        nothing</p>
+    </div>
+  </div>
+</div>
