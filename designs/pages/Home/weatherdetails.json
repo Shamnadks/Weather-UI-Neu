@@ -52,7 +52,15 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "placedata",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "pageInput.placedata"
+                }
+            }
+        ],
         "functionName": "sd_yA7uHur5dtrc5FiG",
         "category": "Function",
         "x": 180,

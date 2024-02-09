@@ -61,6 +61,7 @@ export class weatherdetailsComponent {
 
   sd_yA7uHur5dtrc5FiG(bh) {
     try {
+      this.page.placedata = this.page.pageInput.placedata;
       //appendnew_next_sd_yA7uHur5dtrc5FiG
       return bh;
     } catch (e) {
