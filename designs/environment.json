@@ -13,7 +13,9 @@
             "SSD_DEFAULT_PORT": "server",
             "webAppMountpoint": "both",
             "CLOCK_TOLERANCE": "server",
-            "NGFORAGE_MOBILE_DRIVER": "client"
+            "NGFORAGE_MOBILE_DRIVER": "client",
+            "WEATHER_API_KEY": "client",
+            "WEATHER_API_URL": "client"
         }
     },
     "dev": {
@@ -30,7 +32,9 @@
             "SSD_DEFAULT_PORT": "8081",
             "webAppMountpoint": "web",
             "CLOCK_TOLERANCE": "5",
-            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB"
+            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB",
+            "WEATHER_API_KEY": "558265e28ea5f39d9284e2b5a4596288",
+            "WEATHER_API_URL": "https://api.openweathermap.org/data/2.5"
         }
     },
     "prod": {
@@ -47,7 +51,9 @@
             "SSD_DEFAULT_PORT": "8081",
             "webAppMountpoint": "web",
             "CLOCK_TOLERANCE": "5",
-            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB"
+            "NGFORAGE_MOBILE_DRIVER": "INDEXED_DB",
+            "WEATHER_API_KEY": "558265e28ea5f39d9284e2b5a4596288",
+            "WEATHER_API_URL": "https://api.openweathermap.org/data/2.5"
         }
     }
 }
