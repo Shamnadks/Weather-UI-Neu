@@ -2,6 +2,31 @@
 
 @import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "nDefaults.scss";
-body{
-    background-color:  #4da6ff;
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.background-animation {
+  background: linear-gradient(
+    -45deg,
+    #ff80b553,
+    #9189fc4c,
+    #23a5d556,
+    #23d5ab48
+  );
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
