@@ -305,7 +305,9 @@
                     "_attrDef": "p",
                     "_complexity": "advanced",
                     "displayAs": "forecastdata",
-                    "attrType": "INPUT"
+                    "attrType": "INPUT",
+                    "inValid": false,
+                    "message": ""
                 }
             ]
         },
@@ -340,7 +342,9 @@
                     "_attrDef": "p",
                     "_complexity": "advanced",
                     "displayAs": "forecastdata",
-                    "attrType": "INPUT"
+                    "attrType": "INPUT",
+                    "inValid": false,
+                    "message": ""
                 }
             ]
         }

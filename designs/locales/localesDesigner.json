@@ -3,6 +3,8 @@
         "localeId": "en",
         "localeName": "English",
         "isDefaultLanguage": true,
-        "properties": {}
+        "properties": {
+            "NEXT5DAYS": "Next 5 days"
+        }
     }
 }
