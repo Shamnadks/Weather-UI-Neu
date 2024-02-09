@@ -211,40 +211,14 @@
                 }
             ]
         },
-        "36d96ae3-a359-99c4-2b18-4569d3b769fc": {
-            "paletteKey": "NEUTRINOS_VIEW_forecastdays",
+        "ad2865af-7a80-a1cd-8fec-6604bcd8e6f4": {
+            "paletteKey": "NEUTRINOS_VIEW_header",
             "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
             "commentid": null,
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "forecastdays",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_useAsLabel": true
-                },
-                {
-                    "_key": "style",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "class",
-                    "_value": "",
-                    "_type": "dav",
-                    "_attrDef": "p"
-                }
-            ]
-        },
-        "9d1cd60a-015f-c951-d831-28f3e0b2f13e": {
-            "paletteKey": "NEUTRINOS_VIEW_forecast",
-            "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
-            "commentid": null,
-            "designerReference": [
-                {
-                    "_key": "componentLabel",
-                    "_value": "forecast",
+                    "_value": "header",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -286,17 +260,28 @@
                     "_value": "",
                     "_type": "dav",
                     "_attrDef": "p"
+                },
+                {
+                    "_key": "[placedata]",
+                    "_value": "page.placedata",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_complexity": "advanced",
+                    "displayAs": "placedata",
+                    "attrType": "INPUT",
+                    "inValid": false,
+                    "message": ""
                 }
             ]
         },
-        "ad2865af-7a80-a1cd-8fec-6604bcd8e6f4": {
-            "paletteKey": "NEUTRINOS_VIEW_header",
+        "9d1cd60a-015f-c951-d831-28f3e0b2f13e": {
+            "paletteKey": "NEUTRINOS_VIEW_forecast",
             "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
             "commentid": null,
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "header",
+                    "_value": "forecast",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -312,6 +297,50 @@
                     "_value": "",
                     "_type": "dav",
                     "_attrDef": "p"
+                },
+                {
+                    "_key": "[forecastdata]",
+                    "_value": "page.forecastdata",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_complexity": "advanced",
+                    "displayAs": "forecastdata",
+                    "attrType": "INPUT"
+                }
+            ]
+        },
+        "36d96ae3-a359-99c4-2b18-4569d3b769fc": {
+            "paletteKey": "NEUTRINOS_VIEW_forecastdays",
+            "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "forecastdays",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "[forecastdata]",
+                    "_value": "page.forecastdata",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_complexity": "advanced",
+                    "displayAs": "forecastdata",
+                    "attrType": "INPUT"
                 }
             ]
         }

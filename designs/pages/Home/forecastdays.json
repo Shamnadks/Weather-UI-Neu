@@ -17,6 +17,18 @@
         "viewType": "common",
         "nodeType": "start",
         "name": "",
+        "inputVariables": [
+            {
+                "key": "forecastdata",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                }
+            }
+        ],
+        "localVariables": [],
+        "outputVariables": [],
+        "pageVariables": [],
         "functionName": "sd_As39VSvhp9YQkISa",
         "category": "Lifecycle Events",
         "x": 30,
@@ -40,7 +52,15 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "forecastdata",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": "pageInput.forecastdata"
+                }
+            }
+        ],
         "functionName": "sd_ZJjKXnsC838lZHas",
         "category": "Function",
         "x": 180,
