@@ -31,8 +31,8 @@
         "pageVariables": [],
         "functionName": "sd_Zhp2lwAdvPksiSyk",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 65,
+        "y": 40,
         "wires": [
             [
                 "sd_yA7uHur5dtrc5FiG"
@@ -56,15 +56,36 @@
             {
                 "textIp": "placedata",
                 "typedIpValue": {
-                    "type": "this.page",
+                    "type": "bh",
                     "value": "pageInput.placedata"
+                }
+            },
+            {
+                "textIp": "sunset",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "sunrise",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "dt",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
                 }
             }
         ],
         "functionName": "sd_yA7uHur5dtrc5FiG",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 265,
+        "y": 80,
         "wires": [
             [
                 "sd_ZvQYBffMndSLMCka"
@@ -82,11 +103,11 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "console.log(page.placedata)",
+        "script": "console.log(\"rfdecs\")\nconst sunriseTimestamp = page?.placedata?.sys?.sunrise;\nconst sunsetTimestamp = page?.placedata?.sys?.sunset;\nconst dtTimestamp = page?.placedata?.dt;\n\n// Convert Unix timestamps to milliseconds since Unix epoch\nconst sunriseDate = new Date(sunriseTimestamp * 1000);\nconst sunsetDate = new Date(sunsetTimestamp * 1000);\nconst dt = new Date(dtTimestamp * 1000);\nconst hours = String(sunriseDate.getHours()).padStart(2, '0');\nconst minutes = String(sunriseDate.getMinutes()).padStart(2, '0');\n\n// Format the time\npage.sunrise = hours+':'+minutes;\nconst shours = String(sunsetDate.getHours()).padStart(2, '0');\nconst sminutes = String(sunsetDate.getMinutes()).padStart(2, '0');\n\n// Format the time\npage.sunset = shours+':'+sminutes;\n\n// Get the components of the date\nconst dayOfWeek = dt.toLocaleString('en-US', { weekday: 'short' }); // Short day name\nconst month = dt.toLocaleString('en-US', { month: 'short' }); // Short month name\nconst day = dt.getDate();\nconst year = dt.getFullYear();\n\n// Format the date\npage.dt = `${dayOfWeek} ${month} ${day} ${year}`;",
         "functionName": "sd_ZvQYBffMndSLMCka",
         "category": "Function",
-        "x": 340,
-        "y": 40,
+        "x": 425,
+        "y": 80,
         "wires": [
             []
         ],
@@ -94,5 +115,25 @@
         "generateNext": false,
         "serviceName": "weatherdetailsComponent",
         "generated": true
+    },
+    {
+        "id": "sd_w1eV2ygDZTajQrhE",
+        "type": "OnChanges",
+        "z": "sd_G7lBAJPTioCVnqbK",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "On Changes",
+        "functionName": "ngOnChanges",
+        "category": "Lifecycle Events",
+        "x": 80,
+        "y": 180,
+        "wires": [
+            [
+                "sd_yA7uHur5dtrc5FiG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "weatherdetailsComponent"
     }
 ]

@@ -1,20 +1,18 @@
 {
-    "5c593cee-af74-561a-c368-99b016d4e753": {
+    "1b53510a-a7f5-911c-93e6-746332056abc": {
         "paletteKey": "Html5",
         "isAdvancedComponent": true,
         "commentid": null,
         "designerReference": [
             {
                 "_key": "style",
-                "_value": "height:100%;",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
             {
                 "_key": "class",
-                "_value": [
-                    "background-animation"
-                ],
+                "_value": "",
                 "_type": "dav",
                 "_attrDef": "p"
             },
@@ -187,35 +185,9 @@
                 "_visibility": false
             }
         ],
-        "466377db-354f-9a70-d1ba-4c951142118e": {
-            "paletteKey": "html-editor",
-            "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
-            "isAdvancedChildComponent": true,
-            "commentid": null,
-            "designerReference": [
-                {
-                    "_key": "style",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "class",
-                    "_value": "",
-                    "_type": "dav",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "html",
-                    "_value": "",
-                    "_type": "a",
-                    "_attrDef": "p"
-                }
-            ]
-        },
-        "a3405f46-9524-b5d7-47fd-5f25cb2460e5": {
+        "3ca4eb2e-f908-9e07-b7f9-3e24f6a8e806": {
             "paletteKey": "FlexLayoutCol",
-            "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
+            "parentEditorKey": "1b53510a-a7f5-911c-93e6-746332056abc",
             "commentid": null,
             "designerReference": [
                 {
@@ -233,7 +205,9 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": [
+                        "background-animation"
+                    ],
                     "_type": "dav",
                     "_attrDef": "p"
                 },
@@ -273,87 +247,10 @@
                     "_type": "kv",
                     "_attrDef": "p"
                 }
-<<<<<<< HEAD
-            ]
-        },
-        "9d1cd60a-015f-c951-d831-28f3e0b2f13e": {
-            "paletteKey": "NEUTRINOS_VIEW_forecast",
-            "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
-            "commentid": null,
-            "designerReference": [
-                {
-                    "_key": "componentLabel",
-                    "_value": "forecast",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_useAsLabel": true
-                },
-                {
-                    "_key": "style",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "class",
-                    "_value": "",
-                    "_type": "dav",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[forecastdata]",
-                    "_value": "page.forecastdata",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_complexity": "advanced",
-                    "displayAs": "forecastdata",
-                    "attrType": "INPUT",
-                    "inValid": false,
-                    "message": ""
-                }
-            ]
-        },
-        "36d96ae3-a359-99c4-2b18-4569d3b769fc": {
-            "paletteKey": "NEUTRINOS_VIEW_forecastdays",
-            "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
-            "commentid": null,
-            "designerReference": [
-                {
-                    "_key": "componentLabel",
-                    "_value": "forecastdays",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_useAsLabel": true
-                },
-                {
-                    "_key": "style",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "class",
-                    "_value": "",
-                    "_type": "dav",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "[forecastdata]",
-                    "_value": "page.forecastdata",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_complexity": "advanced",
-                    "displayAs": "forecastdata",
-                    "attrType": "INPUT",
-                    "inValid": false,
-                    "message": ""
-                }
-            ]
-=======
             ],
-            "ad2865af-7a80-a1cd-8fec-6604bcd8e6f4": {
+            "7543fd38-c9d3-c366-2d86-b9b258035497": {
                 "paletteKey": "NEUTRINOS_VIEW_header",
-                "parentEditorKey": "a3405f46-9524-b5d7-47fd-5f25cb2460e5",
+                "parentEditorKey": "3ca4eb2e-f908-9e07-b7f9-3e24f6a8e806",
                 "commentid": null,
                 "designerReference": [
                     {
@@ -383,14 +280,14 @@
                         "_complexity": "advanced",
                         "displayAs": "placeName",
                         "attrType": "OUTPUT",
+                        "_customAttributeFlag": "flowpicker",
                         "inValid": false,
                         "message": "",
-                        "_customAttributeFlag": "flowpicker",
                         "objValue": {
-                            "nodeID": "sd_yAJSvZ0n45owMoqS",
+                            "nodeID": "sd_mLPx6ew3kSyR8C6B",
                             "functionName": "place",
                             "activeTree": "pages",
-                            "z": "sd_bkPp66mmrxGclQvD",
+                            "z": "sd_Ct7nu54wXDrWy8nB",
                             "input": [
                                 "$event"
                             ]
@@ -398,9 +295,9 @@
                     }
                 ]
             },
-            "2cab03ed-3796-620e-8f92-eea9a65587e4": {
+            "eb658d0e-3afd-1600-1bc4-4b304e78598a": {
                 "paletteKey": "NEUTRINOS_VIEW_weatherdetails",
-                "parentEditorKey": "a3405f46-9524-b5d7-47fd-5f25cb2460e5",
+                "parentEditorKey": "3ca4eb2e-f908-9e07-b7f9-3e24f6a8e806",
                 "commentid": null,
                 "designerReference": [
                     {
@@ -424,7 +321,7 @@
                     },
                     {
                         "_key": "[placedata]",
-                        "_value": "page.placedata",
+                        "_value": "page?.placedata",
                         "_type": "kv",
                         "_attrDef": "p",
                         "_complexity": "advanced",
@@ -435,9 +332,9 @@
                     }
                 ]
             },
-            "9d1cd60a-015f-c951-d831-28f3e0b2f13e": {
+            "fbc208b9-f664-a3f0-ed53-a2c2d3405945": {
                 "paletteKey": "NEUTRINOS_VIEW_forecast",
-                "parentEditorKey": "a3405f46-9524-b5d7-47fd-5f25cb2460e5",
+                "parentEditorKey": "3ca4eb2e-f908-9e07-b7f9-3e24f6a8e806",
                 "commentid": null,
                 "designerReference": [
                     {
@@ -472,9 +369,9 @@
                     }
                 ]
             },
-            "36d96ae3-a359-99c4-2b18-4569d3b769fc": {
+            "f98d02fb-0c6a-f629-bc11-7f3180e9d1ac": {
                 "paletteKey": "NEUTRINOS_VIEW_forecastdays",
-                "parentEditorKey": "a3405f46-9524-b5d7-47fd-5f25cb2460e5",
+                "parentEditorKey": "3ca4eb2e-f908-9e07-b7f9-3e24f6a8e806",
                 "commentid": null,
                 "designerReference": [
                     {
@@ -509,7 +406,6 @@
                     }
                 ]
             }
->>>>>>> release
         }
     }
 }

@@ -16,6 +16,8 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-menuComponent
+import { menuComponent } from '../components/Home/menu.component';
 //CORE_REFERENCE_IMPORT-forecastdaysComponent
 import { forecastdaysComponent } from '../components/Home/forecastdays.component';
 //CORE_REFERENCE_IMPORT-forecastComponent
@@ -26,8 +28,6 @@ import { weatherdetailsComponent } from '../components/Home/weatherdetails.compo
 import { headerComponent } from '../components/Home/header.component';
 //CORE_REFERENCE_IMPORT-weatherapi
 import { weatherapi } from '../sd-services/weatherapi';
-//CORE_REFERENCE_IMPORT-homeComponent
-import { homeComponent } from '../components/Home/home.component';
 
 /**
  * Reads datasource object and injects the datasource object into window object
@@ -60,6 +60,8 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-menuComponent
+  menuComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-forecastdaysComponent
   forecastdaysComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-forecastComponent
@@ -68,8 +70,6 @@ export const appDeclarations = [
   weatherdetailsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-headerComponent
   headerComponent,
-  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-homeComponent
-  homeComponent,
 ];
 
 /**
@@ -97,7 +97,7 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: 'home', component: homeComponent },
+  { path: 'home', component: menuComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

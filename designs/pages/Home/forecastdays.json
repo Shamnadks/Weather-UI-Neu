@@ -59,6 +59,13 @@
                     "type": "bh",
                     "value": "pageInput.forecastdata"
                 }
+            },
+            {
+                "textIp": "list",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
             }
         ],
         "functionName": "sd_ZJjKXnsC838lZHas",
@@ -82,7 +89,7 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "    console.log(page,'forcastdata =============')",
+        "script": "\npage.list = page?.forecastdata?.list ? page?.forecastdata?.list?.slice(0, 20) : []; \n\n// const dayInAWeek = new Date().getDay();\n// const WEEK_DAYS = [\n//   \"Sunday\",\n//   \"Monday\",\n//   \"Tuesday\",\n//   \"Wednesday\",\n//   \"Thursday\",\n//   \"Friday\",\n//   \"Saturday\"\n// ];\n\n// // Rotate WEEK_DAYS array so that it starts with the current day\n// const forecastDays = WEEK_DAYS.slice(dayInAWeek).concat(WEEK_DAYS.slice(0, dayInAWeek));\n\n// Attach day of the week to each forecast item\n// page.list = page.list.map((item, index) => {\n//   return {\n//     ...item,\n//     dayOfWeek: forecastDays[index]\n//   };\n// });\nconsole.log(page.list, 'forcastdata =============');\n",
         "functionName": "sd_4k44q82HWs9FJcDz",
         "category": "Function",
         "x": 325,
@@ -94,5 +101,25 @@
         "generateNext": false,
         "serviceName": "forecastdaysComponent",
         "generated": true
+    },
+    {
+        "id": "sd_Ik8Mub4GkKqU0n51",
+        "type": "OnChanges",
+        "z": "sd_kCFb7PETdGf1glQH",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "On Changes",
+        "functionName": "ngOnChanges",
+        "category": "Lifecycle Events",
+        "x": 45,
+        "y": 160,
+        "wires": [
+            [
+                "sd_ZJjKXnsC838lZHas"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "forecastdaysComponent"
     }
 ]
