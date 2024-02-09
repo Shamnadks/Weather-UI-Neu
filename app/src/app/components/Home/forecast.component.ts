@@ -3,7 +3,7 @@
 //CORE_REFERENCE_IMPORTS
 //append_imports_start
 
-import { Component, Injector } from '@angular/core'; //_splitter_
+import { Component, Injector, Input } from '@angular/core'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'; //_splitter_
@@ -17,6 +17,8 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
   ],
 })
 export class forecastComponent {
+  @Input('forecastdata')
+  public forecastdata: any = undefined;
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
