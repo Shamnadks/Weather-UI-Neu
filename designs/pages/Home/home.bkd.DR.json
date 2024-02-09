@@ -211,40 +211,14 @@
                 }
             ]
         },
-        "ad2865af-7a80-a1cd-8fec-6604bcd8e6f4": {
-            "paletteKey": "NEUTRINOS_VIEW_header",
+        "36d96ae3-a359-99c4-2b18-4569d3b769fc": {
+            "paletteKey": "NEUTRINOS_VIEW_forecastdays",
             "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
             "commentid": null,
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "header",
-                    "_type": "kv",
-                    "_attrDef": "p",
-                    "_useAsLabel": true
-                },
-                {
-                    "_key": "style",
-                    "_value": "",
-                    "_type": "kv",
-                    "_attrDef": "p"
-                },
-                {
-                    "_key": "class",
-                    "_value": "",
-                    "_type": "dav",
-                    "_attrDef": "p"
-                }
-            ]
-        },
-        "2cab03ed-3796-620e-8f92-eea9a65587e4": {
-            "paletteKey": "NEUTRINOS_VIEW_weatherdetails",
-            "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
-            "commentid": null,
-            "designerReference": [
-                {
-                    "_key": "componentLabel",
-                    "_value": "weatherdetails",
+                    "_value": "forecastdays",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -262,15 +236,13 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "[placedata]",
-                    "_value": "page.placedata",
+                    "_key": "[forecastdata]",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_complexity": "advanced",
-                    "displayAs": "placedata",
-                    "attrType": "INPUT",
-                    "inValid": false,
-                    "message": ""
+                    "displayAs": "forecastdata",
+                    "attrType": "INPUT"
                 }
             ]
         },
@@ -300,7 +272,7 @@
                 },
                 {
                     "_key": "[forecastdata]",
-                    "_value": "page.forecastdata",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_complexity": "advanced",
@@ -309,14 +281,14 @@
                 }
             ]
         },
-        "36d96ae3-a359-99c4-2b18-4569d3b769fc": {
-            "paletteKey": "NEUTRINOS_VIEW_forecastdays",
+        "2cab03ed-3796-620e-8f92-eea9a65587e4": {
+            "paletteKey": "NEUTRINOS_VIEW_weatherdetails",
             "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
             "commentid": null,
             "designerReference": [
                 {
                     "_key": "componentLabel",
-                    "_value": "forecastdays",
+                    "_value": "weatherdetails",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_useAsLabel": true
@@ -334,13 +306,48 @@
                     "_attrDef": "p"
                 },
                 {
-                    "_key": "[forecastdata]",
-                    "_value": "page.forecastdata",
+                    "_key": "[placedata]",
+                    "_value": "",
                     "_type": "kv",
                     "_attrDef": "p",
                     "_complexity": "advanced",
-                    "displayAs": "forecastdata",
+                    "displayAs": "placedata",
                     "attrType": "INPUT"
+                }
+            ]
+        },
+        "ad2865af-7a80-a1cd-8fec-6604bcd8e6f4": {
+            "paletteKey": "NEUTRINOS_VIEW_header",
+            "parentEditorKey": "5c593cee-af74-561a-c368-99b016d4e753",
+            "commentid": null,
+            "designerReference": [
+                {
+                    "_key": "componentLabel",
+                    "_value": "header",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_useAsLabel": true
+                },
+                {
+                    "_key": "style",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "class",
+                    "_value": "",
+                    "_type": "dav",
+                    "_attrDef": "p"
+                },
+                {
+                    "_key": "(placeName)",
+                    "_value": "",
+                    "_type": "kv",
+                    "_attrDef": "p",
+                    "_complexity": "advanced",
+                    "displayAs": "placeName",
+                    "attrType": "OUTPUT"
                 }
             ]
         }
