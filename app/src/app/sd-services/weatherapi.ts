@@ -91,6 +91,7 @@ export class weatherapi {
 
   async sd_BHnvXjQVIlwaaP7C(bh) {
     try {
+      bh.input.place = 'kasaragod';
       bh.local.url =
         bh.system.environment.properties.WEATHER_API_URL +
         '/weather?q=' +
@@ -140,6 +141,7 @@ export class weatherapi {
 
   async sd_i0Rd4OtlZxW8tt0d(bh) {
     try {
+      bh.input.place = 'kasaragod';
       bh.local.url =
         bh.system.environment.properties.WEATHER_API_URL +
         '/forecast?q=' +
