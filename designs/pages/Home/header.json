@@ -40,8 +40,7 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "headerComponent",
-        "generated": false
+        "serviceName": "headerComponent"
     },
     {
         "id": "sd_BVolLXfJUBimYk33",
@@ -53,7 +52,15 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "isSubmit",
+                "typedIpValue": {
+                    "type": "str",
+                    "value": "\"\""
+                }
+            }
+        ],
         "functionName": "sd_BVolLXfJUBimYk33",
         "category": "Function",
         "x": 245,
@@ -167,8 +174,7 @@
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": true,
-        "serviceName": "headerComponent",
-        "generated": false
+        "serviceName": "headerComponent"
     },
     {
         "id": "sd_mNFX8O12mBAdWRXj",
@@ -284,9 +290,9 @@
             ]
         ],
         "__n_excludedFromValidation__": {},
-        "generated": true,
         "generateNext": false,
-        "serviceName": "headerComponent"
+        "serviceName": "headerComponent",
+        "generated": true
     },
     {
         "id": "sd_fSPFK77nGVplu7Qk",

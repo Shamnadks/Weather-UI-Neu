@@ -1,12 +1,16 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+<div fxLayout="column wrap" style="width:20rem,height:20rem,background-color:black" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
   <div>
   </div>
-  <form [formGroup]="page.form">
-    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-      <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-        <input matInput placeholder="Input" [required]="false" formControlName="place">
+  <div style="display:flex;justify-content:center;margin-top:10px;color:white">
+    <form [formGroup]="page.form">
+      <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" style="margin-right:5px;height:20px;background:blue;display:felx;align-item:center;" fxLayoutAlign="start stretch" [fxShow]="true">
+          <mat-form-field style=" border: none;border-radius:8px;width: 200px;font-size: 16px; background-color: rgba(0, 0, 255,&#xA0;0.2);" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput placeholder="Input" [required]="false" formControlName="place">
 
-      </mat-form-field><button mat-button (click)="placeSearch(page.form.value.place)">Button</button>
-    </div>
-  </form>
+          </mat-form-field>
+        </div><button mat-button style="padding: 10px 20px;font-size: 8px;text-align: center;text-decoration: none;cursor: pointer;border-radius: 50%;background-color: #3498db; color: #fff; border: none;" (click)="placeSearch(page.form.value.place)">Search</button>
+      </div>
+    </form>
+  </div>
 </div>
