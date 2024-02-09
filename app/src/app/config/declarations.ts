@@ -16,6 +16,14 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-forecastdaysComponent
+import { forecastdaysComponent } from '../components/Home/forecastdays.component';
+//CORE_REFERENCE_IMPORT-forecastComponent
+import { forecastComponent } from '../components/Home/forecast.component';
+//CORE_REFERENCE_IMPORT-weatherdetailsComponent
+import { weatherdetailsComponent } from '../components/Home/weatherdetails.component';
+//CORE_REFERENCE_IMPORT-headerComponent
+import { headerComponent } from '../components/Home/header.component';
 //CORE_REFERENCE_IMPORT-weatherapi
 import { weatherapi } from '../sd-services/weatherapi';
 //CORE_REFERENCE_IMPORT-homeComponent
@@ -52,6 +60,14 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-forecastdaysComponent
+  forecastdaysComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-forecastComponent
+  forecastComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-weatherdetailsComponent
+  weatherdetailsComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-headerComponent
+  headerComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-homeComponent
   homeComponent,
 ];
@@ -71,8 +87,8 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
-//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-weatherapi
-weatherapi,
+  //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-weatherapi
+  weatherapi,
 ];
 
 /**

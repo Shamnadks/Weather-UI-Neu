@@ -1,0 +1,56 @@
+[
+    {
+        "id": "sd_kCFb7PETdGf1glQH",
+        "type": "tab",
+        "createdDate": "2024-02-09T06:27:17.651Z",
+        "label": "forecastdays",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "forecastdaysComponent"
+    },
+    {
+        "id": "sd_As39VSvhp9YQkISa",
+        "type": "OnInit",
+        "z": "sd_kCFb7PETdGf1glQH",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_As39VSvhp9YQkISa",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_ZJjKXnsC838lZHas"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "forecastdaysComponent"
+    },
+    {
+        "id": "sd_ZJjKXnsC838lZHas",
+        "type": "PageVariables",
+        "z": "sd_kCFb7PETdGf1glQH",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_ZJjKXnsC838lZHas",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "forecastdaysComponent",
+        "generated": true
+    }
+]
