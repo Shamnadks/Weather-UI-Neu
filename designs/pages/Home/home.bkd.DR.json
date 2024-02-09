@@ -297,6 +297,27 @@
                         "_value": "",
                         "_type": "dav",
                         "_attrDef": "p"
+                    },
+                    {
+                        "_key": "(placeName)",
+                        "_value": "place($event)",
+                        "_type": "kv",
+                        "_attrDef": "p",
+                        "_complexity": "advanced",
+                        "displayAs": "placeName",
+                        "attrType": "OUTPUT",
+                        "inValid": false,
+                        "message": "",
+                        "_customAttributeFlag": "flowpicker",
+                        "objValue": {
+                            "nodeID": "sd_yAJSvZ0n45owMoqS",
+                            "functionName": "place",
+                            "activeTree": "pages",
+                            "z": "sd_bkPp66mmrxGclQvD",
+                            "input": [
+                                "$event"
+                            ]
+                        }
                     }
                 ]
             },
@@ -368,7 +389,9 @@
                         "_attrDef": "p",
                         "_complexity": "advanced",
                         "displayAs": "forecastdata",
-                        "attrType": "INPUT"
+                        "attrType": "INPUT",
+                        "inValid": false,
+                        "message": ""
                     }
                 ]
             },
@@ -403,7 +426,9 @@
                         "_attrDef": "p",
                         "_complexity": "advanced",
                         "displayAs": "forecastdata",
-                        "attrType": "INPUT"
+                        "attrType": "INPUT",
+                        "inValid": false,
+                        "message": ""
                     }
                 ]
             }
