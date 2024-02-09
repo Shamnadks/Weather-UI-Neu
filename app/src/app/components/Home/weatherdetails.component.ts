@@ -62,10 +62,22 @@ export class weatherdetailsComponent {
   sd_yA7uHur5dtrc5FiG(bh) {
     try {
       this.page.placedata = this.page.pageInput.placedata;
+      bh = this.sd_ZvQYBffMndSLMCka(bh);
       //appendnew_next_sd_yA7uHur5dtrc5FiG
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_yA7uHur5dtrc5FiG');
+    }
+  }
+
+  sd_ZvQYBffMndSLMCka(bh) {
+    try {
+      const page = this.page;
+      console.log(page.placedata);
+      //appendnew_next_sd_ZvQYBffMndSLMCka
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_ZvQYBffMndSLMCka');
     }
   }
 

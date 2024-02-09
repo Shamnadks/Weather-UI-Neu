@@ -66,6 +66,28 @@
         "x": 180,
         "y": 30,
         "wires": [
+            [
+                "sd_ZvQYBffMndSLMCka"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "weatherdetailsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ZvQYBffMndSLMCka",
+        "type": "Script",
+        "z": "sd_G7lBAJPTioCVnqbK",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(page.placedata)",
+        "functionName": "sd_ZvQYBffMndSLMCka",
+        "category": "Function",
+        "x": 340,
+        "y": 40,
+        "wires": [
             []
         ],
         "__n_excludedFromValidation__": {},
