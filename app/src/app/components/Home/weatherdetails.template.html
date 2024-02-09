@@ -2,13 +2,15 @@
   <div fxFlex.xs="100" fxFlex.sm="50" fxFlex="50" style="background: rgba(255, 255, 255, 0.2);backdrop-filter: blur(10px);padding: 20px;border:10px;">
     <div style="position: absolute;top: 0;left: 0;padding:20px;">
 
-      London
+      {{page?.placedata?.name}}
       <div>
-        Monday 14 Aug</div>
+        {{page.dt}}
+      </div>
     </div>
     <div style="position: absolute;bottom: 0;right: 0; font-size:3.2rem;padding:20px;">
-      21 c<div style="font-size:1.2rem;">
-        Cloudy </div>
+      {{page?.placedata?.main.temp}}&#xB0;C<div style="font-size:1.2rem;">
+        {{page?.placedata?.weather[0]?.description || &quot;N/A&quot;}}
+      </div>
     </div>
   </div>
   <div fxFlex.xs="100" fxFlex.sm="50" fxFlex="50" style="background: rgba(255, 255, 255, 0.3);backdrop-filter: blur(10px);display:flex;justify-content:center;align-item:center;padding-top:20px;">
@@ -20,25 +22,30 @@
         </div>
         <div fxFlex="33">
           <div>
-            High</div>72
+            {{page?.placedata?.wind.speed}} m/s
+          </div>wind
         </div>
         <div fxFlex="33">
           <div>
-            High</div>72
+            {{page.sunrise}}
+          </div>Sunrice
         </div>
       </div>
       <div fxLayout="row wrap" style="height:50%;display:flex;justify-content:center;align-item:center;text-align: center;padding-top:10px;" fxLayoutAlign="start stretch" [fxShow]="true">
         <div fxFlex="33">
           <div>
-            High</div>72
+            {{page?.placedata?.main.humidity}}%
+          </div>Humidity
         </div>
         <div fxFlex="33">
           <div>
-            High</div>72
+            {{page?.placedata?.main?.pressure}}<small> hPa</small>
+          </div>Pressure
         </div>
         <div fxFlex="33">
           <div>
-            High</div>72
+            {{page.sunset}}
+          </div>Sunset
         </div>
       </div>
     </div>

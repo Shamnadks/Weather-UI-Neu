@@ -5,12 +5,13 @@
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  color: black;
 }
 .background-animation {
   background: linear-gradient(
     -45deg,
     #ff80b553,
-    #9189fc4c,
+    #1100ff4c,
     #23a5d556,
     #23d5ab48
   );

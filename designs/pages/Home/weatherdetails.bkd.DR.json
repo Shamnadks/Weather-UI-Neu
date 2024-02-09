@@ -471,7 +471,7 @@
                         },
                         {
                             "_key": "html",
-                            "_value": "\r\nLondon\r\n",
+                            "_value": "\r\n{{page?.placedata?.name}}",
                             "_type": "a",
                             "_attrDef": "p"
                         }
@@ -684,19 +684,44 @@
                             },
                             {
                                 "_key": "html",
-                                "_value": "Monday 14 Aug",
+                                "_value": "{{page.dt}}",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }
                         ]
                     }
+                },
+                "87801da7-0d87-2173-46b1-959bebe0b2b3": {
+                    "paletteKey": "html-editor",
+                    "parentEditorKey": "8c37c411-ca38-ed62-01d3-c6ba832f6e62",
+                    "isAdvancedChildComponent": true,
+                    "commentid": null,
+                    "designerReference": [
+                        {
+                            "_key": "style",
+                            "_value": "",
+                            "_type": "kv",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "class",
+                            "_value": "",
+                            "_type": "dav",
+                            "_attrDef": "p"
+                        },
+                        {
+                            "_key": "html",
+                            "_value": "",
+                            "_type": "a",
+                            "_attrDef": "p"
+                        }
+                    ]
                 }
             },
             "163d7976-63bf-eb33-0150-4abb2fef0032": {
                 "paletteKey": "Html5",
                 "parentEditorKey": "6ab7057e-512b-bbdf-540a-febd6f15b883",
                 "isAdvancedComponent": true,
-                "isCommented": "false",
                 "commentid": null,
                 "designerReference": [
                     {
@@ -884,7 +909,6 @@
                     "paletteKey": "html-editor",
                     "parentEditorKey": "163d7976-63bf-eb33-0150-4abb2fef0032",
                     "isAdvancedChildComponent": true,
-                    "isCommented": "false",
                     "commentid": null,
                     "designerReference": [
                         {
@@ -901,7 +925,7 @@
                         },
                         {
                             "_key": "html",
-                            "_value": "21 c",
+                            "_value": "{{page?.placedata?.main.temp}}°C",
                             "_type": "a",
                             "_attrDef": "p"
                         }
@@ -911,7 +935,6 @@
                     "paletteKey": "Html5",
                     "parentEditorKey": "163d7976-63bf-eb33-0150-4abb2fef0032",
                     "isAdvancedComponent": true,
-                    "isCommented": "false",
                     "commentid": null,
                     "designerReference": [
                         {
@@ -1099,7 +1122,6 @@
                         "paletteKey": "html-editor",
                         "parentEditorKey": "343246b2-25ab-bd8f-5898-85a392d2899c",
                         "isAdvancedChildComponent": true,
-                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
@@ -1116,7 +1138,7 @@
                             },
                             {
                                 "_key": "html",
-                                "_value": "Cloudy ",
+                                "_value": "{{page?.placedata?.weather[0]?.description || \"N/A\"}}",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }
@@ -2286,7 +2308,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "High",
+                                        "_value": "{{page?.placedata?.wind.speed}} m/s",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -2313,7 +2335,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "72",
+                                    "_value": "wind",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }
@@ -2720,7 +2742,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "High",
+                                        "_value": "{{page.sunrise}}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -2747,7 +2769,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "72",
+                                    "_value": "Sunrice",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }
@@ -3216,7 +3238,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "High",
+                                        "_value": "{{page?.placedata?.main.humidity}}%",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -3243,7 +3265,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "72",
+                                    "_value": "Humidity",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }
@@ -3650,7 +3672,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "High",
+                                        "_value": "{{page?.placedata?.main?.pressure}}<small> hPa</small>",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -3677,7 +3699,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "72",
+                                    "_value": "Pressure",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }
@@ -4084,7 +4106,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "High",
+                                        "_value": "{{page.sunset}}",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -4111,7 +4133,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "72",
+                                    "_value": "Sunset",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }

@@ -3,7 +3,13 @@
 //CORE_REFERENCE_IMPORTS
 //append_imports_start
 
-import { Component, Injector, Input } from '@angular/core'; //_splitter_
+import {
+  Component,
+  Injector,
+  Input,
+  OnChanges,
+  SimpleChanges,
+} from '@angular/core'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'; //_splitter_
@@ -16,7 +22,7 @@ import { NeuServiceInvokerService } from 'app/n-services/service-caller.service'
     //appendnew_element_providers
   ],
 })
-export class weatherdetailsComponent {
+export class weatherdetailsComponent implements OnChanges {
   @Input('placedata')
   public placedata: any = undefined;
   page: any = { dep: {} };
@@ -57,11 +63,27 @@ export class weatherdetailsComponent {
     }
   }
 
+  ngOnChanges(changes: SimpleChanges) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.changes = changes;
+      bh = this.sd_yA7uHur5dtrc5FiG(bh);
+      //appendnew_next_ngOnChanges
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_w1eV2ygDZTajQrhE');
+    }
+  }
+
   //appendnew_flow_weatherdetailsComponent_start
 
   sd_yA7uHur5dtrc5FiG(bh) {
     try {
-      this.page.placedata = this.page.pageInput.placedata;
+      this.page.placedata = bh.pageInput.placedata;
+      this.page.sunset = undefined;
+      this.page.sunrise = undefined;
+      this.page.dt = undefined;
       bh = this.sd_ZvQYBffMndSLMCka(bh);
       //appendnew_next_sd_yA7uHur5dtrc5FiG
       return bh;
@@ -73,7 +95,34 @@ export class weatherdetailsComponent {
   sd_ZvQYBffMndSLMCka(bh) {
     try {
       const page = this.page;
-      console.log(page.placedata);
+      console.log('rfdecs');
+      const sunriseTimestamp = page?.placedata?.sys?.sunrise;
+      const sunsetTimestamp = page?.placedata?.sys?.sunset;
+      const dtTimestamp = page?.placedata?.dt;
+
+      // Convert Unix timestamps to milliseconds since Unix epoch
+      const sunriseDate = new Date(sunriseTimestamp * 1000);
+      const sunsetDate = new Date(sunsetTimestamp * 1000);
+      const dt = new Date(dtTimestamp * 1000);
+      const hours = String(sunriseDate.getHours()).padStart(2, '0');
+      const minutes = String(sunriseDate.getMinutes()).padStart(2, '0');
+
+      // Format the time
+      page.sunrise = hours + ':' + minutes;
+      const shours = String(sunsetDate.getHours()).padStart(2, '0');
+      const sminutes = String(sunsetDate.getMinutes()).padStart(2, '0');
+
+      // Format the time
+      page.sunset = shours + ':' + sminutes;
+
+      // Get the components of the date
+      const dayOfWeek = dt.toLocaleString('en-US', { weekday: 'short' }); // Short day name
+      const month = dt.toLocaleString('en-US', { month: 'short' }); // Short month name
+      const day = dt.getDate();
+      const year = dt.getFullYear();
+
+      // Format the date
+      page.dt = `${dayOfWeek} ${month} ${day} ${year}`;
       //appendnew_next_sd_ZvQYBffMndSLMCka
       return bh;
     } catch (e) {

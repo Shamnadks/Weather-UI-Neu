@@ -1,0 +1,237 @@
+[
+    {
+        "id": "sd_Ct7nu54wXDrWy8nB",
+        "type": "tab",
+        "createdDate": "2024-02-09T15:29:36.641Z",
+        "label": "menu",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "menuComponent"
+    },
+    {
+        "id": "sd_DUay2zqZDVUzC0L5",
+        "type": "OnInit",
+        "z": "sd_Ct7nu54wXDrWy8nB",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "inputVariables": [],
+        "localVariables": [],
+        "outputVariables": [],
+        "pageVariables": [],
+        "functionName": "sd_DUay2zqZDVUzC0L5",
+        "category": "Lifecycle Events",
+        "x": 145,
+        "y": 140,
+        "wires": [
+            [
+                "sd_wFqdRi4fwpN41akh"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "menuComponent"
+    },
+    {
+        "id": "sd_wFqdRi4fwpN41akh",
+        "type": "PageVariables",
+        "z": "sd_Ct7nu54wXDrWy8nB",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "placedata",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "forecastdata",
+                "typedIpValue": {
+                    "type": "bh",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_wFqdRi4fwpN41akh",
+        "category": "Function",
+        "x": 305,
+        "y": 140,
+        "wires": [
+            [
+                "sd_v69f3hLUGRvvsGYQ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "menuComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_mLPx6ew3kSyR8C6B",
+        "type": "PageStart",
+        "z": "sd_Ct7nu54wXDrWy8nB",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "place",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "placedata",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "place",
+        "category": "General",
+        "x": 385,
+        "y": 300,
+        "wires": [
+            [
+                "sd_v69f3hLUGRvvsGYQ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "menuComponent"
+    },
+    {
+        "id": "sd_v69f3hLUGRvvsGYQ",
+        "type": "Script",
+        "z": "sd_Ct7nu54wXDrWy8nB",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.placedata=bh.input.placedata?.weatherData;\npage.forecastdata=bh.input.placedata?.forCastData\nconsole.log(\"rvfcedsxazdfcsx\")\nconsole.log(page.placedata)\nconsole.log(\"tgvrfdc\")",
+        "functionName": "sd_v69f3hLUGRvvsGYQ",
+        "category": "Function",
+        "x": 465,
+        "y": 140,
+        "wires": [
+            [
+                "sd_1Xe1iGHx0t44Aeyg"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "menuComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_1Xe1iGHx0t44Aeyg",
+        "type": "Script",
+        "z": "sd_Ct7nu54wXDrWy8nB",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "if(page.placedata){\n    return;\n}\n\nbh.input.placeName=\"kasaragod\"",
+        "functionName": "sd_1Xe1iGHx0t44Aeyg",
+        "category": "Function",
+        "x": 605,
+        "y": 140,
+        "wires": [
+            [
+                "sd_8sPRali4SYT50HXK"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "menuComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_8sPRali4SYT50HXK",
+        "type": "PageCallService",
+        "z": "sd_Ct7nu54wXDrWy8nB",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_o4DvsS7SsYjYrtv6",
+            "type": "tab",
+            "createdDate": "2024-02-09T05:34:42.188Z",
+            "label": "weatherapi",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_jq3BYVrlC0e9zBEe",
+            "flowName": "weatherapi"
+        },
+        "inputVariables": [
+            {
+                "key": "place",
+                "map": true,
+                "valueType": "bh.input",
+                "value": "placeName"
+            }
+        ],
+        "outputMapping": [
+            {
+                "mapVarType": "local",
+                "key": "resultdata",
+                "valueType": "bh.local",
+                "value": "weatherResponse",
+                "mapVarName": "resultdata",
+                "localVar": "bh.local.weatherResponse"
+            }
+        ],
+        "serviceImportPath": "app/sd-services/weatherapi",
+        "startName": "weatherapi",
+        "inputParams": [
+            "bh.input.placeName"
+        ],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_8sPRali4SYT50HXK",
+        "category": "General",
+        "x": 765,
+        "y": 140,
+        "wires": [
+            [
+                "sd_0l8CZbE95blMzbsK"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "menuComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_0l8CZbE95blMzbsK",
+        "type": "Script",
+        "z": "sd_Ct7nu54wXDrWy8nB",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "\npage.placedata= bh.local?.weatherResponse?.weatherdata;\npage.forecastdata=bh.local?.weatherResponse?.forecastdata\nconsole.log(bh.local.weatherResponse)\n",
+        "functionName": "sd_0l8CZbE95blMzbsK",
+        "category": "Function",
+        "x": 865,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "menuComponent",
+        "generated": true
+    }
+]
