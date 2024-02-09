@@ -1,0 +1,56 @@
+[
+    {
+        "id": "sd_G7lBAJPTioCVnqbK",
+        "type": "tab",
+        "createdDate": "2024-02-09T06:26:58.017Z",
+        "label": "weatherdetails",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "weatherdetailsComponent"
+    },
+    {
+        "id": "sd_Zhp2lwAdvPksiSyk",
+        "type": "OnInit",
+        "z": "sd_G7lBAJPTioCVnqbK",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_Zhp2lwAdvPksiSyk",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_yA7uHur5dtrc5FiG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "weatherdetailsComponent"
+    },
+    {
+        "id": "sd_yA7uHur5dtrc5FiG",
+        "type": "PageVariables",
+        "z": "sd_G7lBAJPTioCVnqbK",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_yA7uHur5dtrc5FiG",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "weatherdetailsComponent",
+        "generated": true
+    }
+]
