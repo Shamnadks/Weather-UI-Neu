@@ -1,10 +1,10 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-  <div>
+<div fxLayout="column wrap" style="width:20rem,height:20rem,background-color:black" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div style="background-color:red">
     <h1>
       {{page.form.value.place}}
     </h1>
   </div>
-  <form [formGroup]="page.form">
+  <form [formGroup]="page.form" style="background-color:blue,display:100%">
     <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
       <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
         <input matInput placeholder="Input" [required]="false" formControlName="place">

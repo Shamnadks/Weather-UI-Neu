@@ -78,6 +78,7 @@ export class headerComponent {
 
   sd_BVolLXfJUBimYk33(bh) {
     try {
+      this.page.isSubmit = '""';
       bh = this.formData(bh);
       //appendnew_next_sd_BVolLXfJUBimYk33
       return bh;

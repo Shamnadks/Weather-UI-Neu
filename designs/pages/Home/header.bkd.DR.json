@@ -12,7 +12,7 @@
             },
             {
                 "_key": "style",
-                "_value": "",
+                "_value": "width:20rem,height:20rem,background-color:black",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -24,7 +24,7 @@
             },
             {
                 "_key": "fxFlex",
-                "_value": "",
+                "_value": "100",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -67,7 +67,7 @@
             "designerReference": [
                 {
                     "_key": "style",
-                    "_value": "",
+                    "_value": "background-color:red",
                     "_type": "kv",
                     "_attrDef": "p"
                 },
@@ -501,7 +501,7 @@
                 },
                 {
                     "_key": "style",
-                    "_value": "",
+                    "_value": "background-color:blue,display:100%",
                     "_type": "kv",
                     "_attrDef": "p"
                 },

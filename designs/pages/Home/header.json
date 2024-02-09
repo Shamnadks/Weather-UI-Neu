@@ -52,7 +52,15 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "isSubmit",
+                "typedIpValue": {
+                    "type": "str",
+                    "value": "\"\""
+                }
+            }
+        ],
         "functionName": "sd_BVolLXfJUBimYk33",
         "category": "Function",
         "x": 245,
