@@ -31,8 +31,8 @@
         "pageVariables": [],
         "functionName": "sd_As39VSvhp9YQkISa",
         "category": "Lifecycle Events",
-        "x": 30,
-        "y": 30,
+        "x": 45,
+        "y": 40,
         "wires": [
             [
                 "sd_ZJjKXnsC838lZHas"
@@ -63,8 +63,30 @@
         ],
         "functionName": "sd_ZJjKXnsC838lZHas",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 185,
+        "y": 40,
+        "wires": [
+            [
+                "sd_4k44q82HWs9FJcDz"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "forecastdaysComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_4k44q82HWs9FJcDz",
+        "type": "Script",
+        "z": "sd_kCFb7PETdGf1glQH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "    console.log(page,'forcastdata =============')",
+        "functionName": "sd_4k44q82HWs9FJcDz",
+        "category": "Function",
+        "x": 325,
+        "y": 40,
         "wires": [
             []
         ],
