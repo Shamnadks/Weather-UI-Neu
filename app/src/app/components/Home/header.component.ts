@@ -134,7 +134,7 @@ export class headerComponent {
       );
       bh.local.weatherResponse = outputVariables.local.resultdata;
 
-      bh = this.sd_fSPFK77nGVplu7Qk(bh);
+      bh = this.sd_iqZ9ESRJbUpJyleO(bh);
       //appendnew_next_sd_28woQMO5MBqZ7WdE
       return bh;
     } catch (e) {
@@ -142,32 +142,18 @@ export class headerComponent {
     }
   }
 
-  async sd_fSPFK77nGVplu7Qk(bh) {
-    try {
-      const weatherapiInstance: weatherapi =
-        this.__page_injector__.get(weatherapi);
-
-      let outputVariables = await weatherapiInstance.forecastapi(
-        bh.input.placeName
-      );
-      bh.local.forCasteResponse = outputVariables.local.resultfdata;
-
-      bh = this.sd_iqZ9ESRJbUpJyleO(bh);
-      //appendnew_next_sd_fSPFK77nGVplu7Qk
-      return bh;
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_fSPFK77nGVplu7Qk');
-    }
-  }
-
   sd_iqZ9ESRJbUpJyleO(bh) {
     try {
       const page = this.page;
       bh.local.response = {
-        weatherData: bh.local.weatherResponse,
-        forCastData: bh.local.forCasteResponse,
+        weatherData: bh.local?.weatherResponse?.weatherdata,
+        forCastData: bh.local?.weatherResponse?.forecastdata,
       };
+      // console.log(bh.local)
+      // console.log(bh.input)
+
       console.log(bh.local.response);
+
       bh = this.sd_TGxs09gILxpS6hEh(bh);
       //appendnew_next_sd_iqZ9ESRJbUpJyleO
       return bh;

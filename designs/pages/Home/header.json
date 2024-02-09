@@ -286,69 +286,6 @@
         "y": 200,
         "wires": [
             [
-                "sd_fSPFK77nGVplu7Qk"
-            ]
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "headerComponent",
-        "generated": true
-    },
-    {
-        "id": "sd_fSPFK77nGVplu7Qk",
-        "type": "PageCallService",
-        "z": "sd_z827zzQ9CGjywGgJ",
-        "viewType": "pages",
-        "nodeType": "flow",
-        "name": "",
-        "outputs": 1,
-        "isValidNode": true,
-        "noerr": 0,
-        "service": {
-            "id": "sd_o4DvsS7SsYjYrtv6",
-            "type": "tab",
-            "createdDate": "2024-02-09T05:34:42.188Z",
-            "label": "weatherapi",
-            "disabled": false,
-            "info": "",
-            "functionSeq": 0,
-            "tabType": "client"
-        },
-        "flow": {
-            "flowId": "sd_lLaIWdce3aMEdxgq",
-            "flowName": "forecastapi"
-        },
-        "inputVariables": [
-            {
-                "key": "place",
-                "map": true,
-                "valueType": "bh.input",
-                "value": "placeName"
-            }
-        ],
-        "outputMapping": [
-            {
-                "mapVarType": "local",
-                "key": "resultfdata",
-                "valueType": "bh.local",
-                "value": "forCasteResponse",
-                "mapVarName": "resultfdata",
-                "localVar": "bh.local.forCasteResponse"
-            }
-        ],
-        "serviceImportPath": "app/sd-services/weatherapi",
-        "startName": "forecastapi",
-        "inputParams": [
-            "bh.input.placeName"
-        ],
-        "accept_bh": false,
-        "accept_csd": true,
-        "functionName": "sd_fSPFK77nGVplu7Qk",
-        "category": "General",
-        "x": 485,
-        "y": 200,
-        "wires": [
-            [
                 "sd_iqZ9ESRJbUpJyleO"
             ]
         ],
@@ -364,7 +301,7 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "bh.local.response = {\n    weatherData: bh.local.weatherResponse,\n    forCastData: bh.local.forCasteResponse\n}\nconsole.log(bh.local.response)",
+        "script": "bh.local.response = {\n    weatherData: bh.local?.weatherResponse?.weatherdata,\n    forCastData: bh.local?.weatherResponse?.forecastdata\n}\n// console.log(bh.local)\n// console.log(bh.input)\n\nconsole.log(bh.local.response)\n",
         "functionName": "sd_iqZ9ESRJbUpJyleO",
         "category": "Function",
         "x": 605,

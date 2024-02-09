@@ -611,7 +611,6 @@
                     "1a637da5-5c3c-1814-0c86-6b199cd6044b": {
                         "paletteKey": "FlexLayoutCol",
                         "parentEditorKey": "ec99fefd-2fb5-e03d-3cbe-94d958cf9d4e",
-                        "isCommented": "false",
                         "commentid": null,
                         "designerReference": [
                             {
@@ -674,7 +673,6 @@
                             "paletteKey": "NG-Input",
                             "parentEditorKey": "1a637da5-5c3c-1814-0c86-6b199cd6044b",
                             "isAdvancedComponent": true,
-                            "isCommented": "false",
                             "commentid": null,
                             "designerReference": [
                                 {
