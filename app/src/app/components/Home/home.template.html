@@ -1,3 +1,3 @@
-<div>
-  <bh-forecastdays></bh-forecastdays><bh-forecast></bh-forecast><bh-weatherdetails></bh-weatherdetails><bh-header></bh-header>
+<div style="height:100%;" class="background-animation">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><bh-header></bh-header><bh-weatherdetails [placedata]="page.placedata"></bh-weatherdetails><bh-forecast [forecastdata]="page.forecastdata"></bh-forecast><bh-forecastdays [forecastdata]="page.forecastdata"></bh-forecastdays></div>
 </div>
