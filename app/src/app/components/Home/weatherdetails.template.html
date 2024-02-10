@@ -4,10 +4,9 @@
 
       {{page?.placedata?.name}}
       <div>
-        {{page.dt}}
-      </div>
+        Sat 10 Feb</div>
     </div>
-    <div style="position: absolute;bottom: 0;right: 0; font-size:3.2rem;padding:20px;">
+    <div style="position: absolute;bottom: 0;right: 0; font-size:2.2rem;padding:20px; ">
       {{page?.placedata?.main.temp}}&#xB0;C<div style="font-size:1.2rem;">
         {{page?.placedata?.weather[0]?.description || &quot;N/A&quot;}}
       </div>
@@ -18,7 +17,8 @@
       <div fxLayout="row wrap" style="height:50%;display:flex;justify-content:center;align-item:center;text-align: center;padding-top:10px;" fxLayoutAlign="start stretch" [fxShow]="true">
         <div fxFlex="33">
           <div>
-            72</div>High
+            {{page?.placedata?.main.feels_like}}&#xB0;C
+          </div>Feels
         </div>
         <div fxFlex="33">
           <div>
