@@ -31,3 +31,14 @@ body {
     background-position: 0% 50%;
   }
 }
+
+@media (max-width: 599px) {
+  input {
+    /* Add your custom styles here to reduce the size of the input */
+   
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 5px;
+    /* Add any other styles as needed */
+  }
+}
