@@ -684,7 +684,7 @@
                             },
                             {
                                 "_key": "html",
-                                "_value": "{{page.dt}}",
+                                "_value": "Sat 10 Feb",
                                 "_type": "a",
                                 "_attrDef": "p"
                             }
@@ -726,7 +726,7 @@
                 "designerReference": [
                     {
                         "_key": "style",
-                        "_value": "position: absolute;bottom: 0;right: 0; font-size:3.2rem;padding:20px;",
+                        "_value": "position: absolute;bottom: 0;right: 0; font-size:2.2rem;padding:20px; ",
                         "_type": "kv",
                         "_attrDef": "p"
                     },
@@ -1874,7 +1874,7 @@
                                     },
                                     {
                                         "_key": "html",
-                                        "_value": "72",
+                                        "_value": "{{page?.placedata?.main.feels_like}}°C",
                                         "_type": "a",
                                         "_attrDef": "p"
                                     }
@@ -1901,7 +1901,7 @@
                                 },
                                 {
                                     "_key": "html",
-                                    "_value": "High",
+                                    "_value": "Feels ",
                                     "_type": "a",
                                     "_attrDef": "p"
                                 }

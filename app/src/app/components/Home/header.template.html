@@ -5,7 +5,7 @@
     <form [formGroup]="page.form">
       <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="center stretch" [fxShow]="true">
         <mat-form-field style="border-radius: 1.2rem;padding: 5px 10px ;margin-left:30px;margin-top:10px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-          <input matInput placeholder="Input" [required]="false" formControlName="place">
+          <input matInput placeholder="CIty" [required]="false" formControlName="place">
 
         </mat-form-field><button mat-button style="border-radius:1.2rem;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);margin-left:15px;width:50px;height:80px;padding:5px 10px" (click)="placeSearch(page.form.value.place)">Search</button>
       </div>
